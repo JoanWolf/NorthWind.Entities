@@ -1,7 +1,9 @@
-﻿namespace NorthWind.Entities.Interfaces
+﻿
+namespace NorthWind.Entities.Interfaces
 {
-	internal interface IUserActionWriter
+	public interface IUserActionWriter
 	{
 		void Write(UserAction action);
+
 	}
 }
