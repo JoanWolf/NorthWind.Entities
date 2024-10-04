@@ -1,11 +1,14 @@
 ﻿namespace NorthWind.ConsoleApp.Services
 {
-	internal class AppLogger(IUserActionWriter writer)
+	internal class AppLogger(IEnumerable<IUserActionWriter> writers)
 	{
 		public void WriteLog(string message)
 		{
 			UserAction Log = new UserAction("System", message);
-			writer.Write(Log);
+				foreach (var writer in writers) 
+					writer.Write(Log);
+				
 		}
+
 	}
 }
