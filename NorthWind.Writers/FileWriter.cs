@@ -1,6 +1,6 @@
 ﻿namespace NorthWind.Writers;
 
-	public class FileWriter : IUserActionWriter
+	internal class FileWriter : IUserActionWriter
 	{
 		public void Write(UserAction action)
 		{

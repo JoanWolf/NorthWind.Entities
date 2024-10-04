@@ -2,7 +2,7 @@
 
 namespace NorthWind.Writers
 {
-	public class DebugWriter  : IUserActionWriter
+	internal class DebugWriter  : IUserActionWriter
 	{
 		public void Write(UserAction action)
 		{

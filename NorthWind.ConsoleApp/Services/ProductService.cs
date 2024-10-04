@@ -6,7 +6,7 @@ namespace NorthWind.ConsoleApp.Services
 	{
 		public void Add(String user, string productName)
 		{
-			UserAction Action = new UserAction(user, $"Created: {productName}");
+			UserAction Action = new UserAction(user, $"ProductServices: {productName}");
 			writer.Write(Action);
 		}
 	}
